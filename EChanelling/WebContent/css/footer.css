@@ -1,0 +1,104 @@
+	@import url("../bootstrap/css/bootstrap.min.css");
+
+@charset "utf-8";
+@import url("https://kit.fontawesome.com/48aedca16c.js");
+@import url("main.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row5, .row5 a{}
+
+
+/* FooterFooter
+--------------------------------------------------------------------------------------------------------------- */
+#footer{
+	padding:50px 0;
+}
+
+#footer .title{
+	margin:0 0 30px 0; 
+	padding:0 0 8px 0; 
+	border-bottom:1px solid; 
+	font-size:16px; 
+	text-transform:uppercase;
+}
+
+#footer .linklist li{margin-bottom:10px;}
+#footer .linklist li:last-child{margin-bottom:0;}
+
+#footer .smallfont{font-size:.8rem; margin:0;}
+
+#footer input, #footer button{border:none;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:6px 12px 8px; font-weight:bold; text-transform:uppercase; cursor:pointer;}
+
+#footerSeperator{
+	margin-top: 2% ;
+	border : groove 2px #adadad;
+	width: 100% ;
+}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+.faico a, #mainav *, #backtotop, .services i, #info .services li,  .overlay{transition:all .3s ease-in-out;}
+
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+
+
+/* Rows */
+
+.row5{color:#888888; background-color:#161616;}
+
+
+/* Top Bar */
+#topbar .faico a{color:inherit;}
+#topbar .faico a:hover{color:#FFFFFF;}
+
+
+/* Footer */
+#footer .title{color:#FFFFFF; border-color:#2F2F2F;}
+#footer input{color:#FFFFFF; background-color:#2F2F2F;}
+#footer button{color:#FFFFFF; background-color:#8ABA56;}
+
+
+#backtotop{color:#FFFFFF; background-color:#8ABA56;}
+
+
+/* Smartphone + Tablet
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:180px) and (max-width:750px) {
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_quarter, {display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#footer{padding-bottom:20px;}
+}
+
+@media screen and (min-width:180px) and (max-width:900px) {
+    #footer, #copyright{max-width:90%;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	 #footer, #copyright{max-width:978px;}
+}
